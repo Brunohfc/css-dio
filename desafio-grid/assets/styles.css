@@ -1,0 +1,201 @@
+
+/* header element */
+header{
+  display: flex;
+  background-color: red;
+  height: 56px;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.logo{
+  border: 1px solid wheat;
+  margin: 0 0 0 15px;
+  display: inline-flex; 
+  align-items: center;
+}
+.logo .youtubePic{
+  width: 90px;
+  height: 20px;
+  margin-left: 15px;
+}
+
+#search{
+  display: inline-flex;
+  overflow: hidden;  
+  border: 1px solid black;
+  align-items: center;
+}
+
+#search input[type=text] {
+  padding: 10px;
+  border: 1px solid rgba(204,204, 204, 1);
+  font-size: 17px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.searchIcon{
+  width: 57px;
+  height: 40px;
+  border: 1px solid rgba(204,204, 204, 1);
+  background-color: rgba(248, 248, 248, 1);
+  
+  /* align search icon vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile{
+  display: inline-flex;
+  border: 1px solid black;
+  align-items: center;
+}
+
+.profile img{
+  margin-right: 15px;
+}
+
+
+/* aside left element */
+
+.left{
+  background-color: antiquewhite;
+  align-items: center;
+  float: left;
+  width: 218px;
+
+}
+.elements{
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+
+}
+
+
+.elements img{
+  border: 5px solid red;
+  margin-left: 13px ;
+}
+
+.elements p{
+  margin-left: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+}
+
+
+.left img{
+  align-items: center;
+  border: 1px solid black;
+}
+.left p{
+  border: 1px solid black;
+  display: inline-block;
+}
+
+body{
+  background-color: aqua;
+  display: grid;
+  grid-template: repeat(3,200px);
+} 
+
+body {
+  display: grid;
+  row-gap: 0;
+  
+  /* Definindo o grid-template com 4 linhas e 4 colunas */
+  grid-template: 
+    "header header header header" 57px
+    "left content content content" 200px
+    "left content content content" 200px
+    "left footer footer footer" 50px
+    "left footer footer footer" 50px
+    / 216px 1fr 1fr 1fr;
+}
+
+
+
+/* Grid elements  */
+
+.container{
+  display: flex;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgb(236, 7, 7);
+  flex-direction: column;
+}
+
+.containerContent{
+  border: 1px solid #8d0606;
+  width: 282px;
+  height: 160px;
+  margin: 24px 14px 14px 28px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.containerInfos{
+  border: 1px solid black;
+  width: 282px;
+  height: 110px;
+  margin: 0 14px 14px 28px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.containerInfos img{
+  border: 1px solid black;
+  width: 42px;
+  height: 42px;
+  margin: 0 10px 52px 0;
+  
+}
+
+.containerInfos h6{
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: 600px;
+  width: 150px;
+  height: 35px;
+  margin: 0 0 0 10px;
+  
+}
+.containerInfos p{
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid black;
+  margin: -50px  auto;
+  width: 150px;
+  
+}
+ 
+
+
+
+.header {
+  background-color: yellowgreen;
+  grid-area: header;
+}
+
+.left {
+  background-color: lightblue;
+  grid-area: left;
+}
+
+.content {
+  background-color: lightcoral;
+  grid-area: content;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: lightgray;
+  grid-area: footer;
+}
