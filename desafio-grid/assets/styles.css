@@ -2,14 +2,14 @@
 /* header element */
 header{
   display: flex;
-  background-color: red;
+  background-color: #FFFFFF;
   height: 56px;
   width: 100vw;
   justify-content: space-between;
 }
 
 .logo{
-  border: 1px solid wheat;
+  
   margin: 0 0 0 15px;
   display: inline-flex; 
   align-items: center;
@@ -23,7 +23,7 @@ header{
 #search{
   display: inline-flex;
   overflow: hidden;  
-  border: 1px solid black;
+  
   align-items: center;
 }
 
@@ -49,26 +49,28 @@ header{
 
 .profile{
   display: inline-flex;
-  border: 1px solid black;
   align-items: center;
 }
 
 .profile img{
   margin-right: 15px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
 }
 
 
 /* aside left element */
 
 .left{
-  background-color: antiquewhite;
+  background-color: #FFFFFF;
   align-items: center;
   float: left;
   width: 218px;
-
+  margin-top: -1px;
+  grid-area: left;
 }
 .elements{
-  border: 1px solid black;
   display: flex;
   align-items: center;
 
@@ -76,7 +78,7 @@ header{
 
 
 .elements img{
-  border: 5px solid red;
+  
   margin-left: 13px ;
 }
 
@@ -90,15 +92,15 @@ header{
 
 .left img{
   align-items: center;
-  border: 1px solid black;
+  
 }
 .left p{
-  border: 1px solid black;
+  
   display: inline-block;
 }
 
 body{
-  background-color: aqua;
+  background-color: #F9F9F9;
   display: grid;
   grid-template: repeat(3,200px);
 } 
@@ -130,12 +132,12 @@ body {
   display: flex;
   height: 262px;
   width: 282px;
-  border: 1px solid rgb(236, 7, 7);
+  
   flex-direction: column;
 }
 
 .containerContent{
-  border: 1px solid #8d0606;
+  
   width: 250px;
   height: 140px;
   margin: 24px 14px 14px 28px;
@@ -146,7 +148,7 @@ body {
   
 }
 .containerInfos{
-  border: 1px solid black;
+  
   width: 282px;
   height: 110px;
   margin: 0 14px 14px 28px;
@@ -155,7 +157,7 @@ body {
 }
 
 .containerInfos img{
-  border: 1px solid black;
+  
   width: 42px;
   height: 42px;
   margin: 0 10px 52px 0;
@@ -163,7 +165,6 @@ body {
 }
 
 .containerInfos h6{
-  border: 1px solid black;
   font-size: 14px;
   font-weight: 600px;
   width: 150px;
@@ -174,31 +175,26 @@ body {
 .containerInfos p{
   font-size: 12px;
   font-weight: 400;
-  border: 1px solid black;
   margin: -50px  auto;
   width: 150px;
   
 }
  
-
-
-
-.header {
-  background-color: yellowgreen;
-  grid-area: header;
-}
-
-.left {
-  background-color: lightblue;
-  grid-area: left;
-}
-
 .content {
-  /* background-color: lightcoral; */
+  
   grid-area: content;
   display: inline-flex;
   flex-wrap: wrap;
 }
+
+
+
+
+ .header png{
+  grid-area: header;
+}
+
+
 
 .footer {
   background-color: lightgray;
