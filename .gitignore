@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Pastas de cache
+__pycache__/
+Thumbs.db
+
+# Arquivos temporários de edição
+*.swp
+*.swo
+*.tmp
+
+# Arquivos gerados pelo sistema
+.DS_Store
+.Trashes
+*.log
+
+# Backups de editores de texto
+*.bak
+*.old
+*.orig
+*.save
+
+# Arquivos de metadados do macOS
+.Spotlight-V100
+.VolumeIcon.icns
+.fseventsd
